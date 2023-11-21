@@ -1,0 +1,82 @@
+What is Express.js?
+
+Answer: Express.js is a web application framework for Node.js. It simplifies the process of building robust and scalable web applications by providing a set of features and middleware for handling routes, requests, and responses.
+Explain the core features of Express.js.
+
+Answer: Express.js provides features such as routing, middleware support, template engines, and simplified handling of HTTP requests and responses. It is designed to be minimal and flexible, allowing developers to structure their applications as they see fit.
+What is middleware in Express.js?
+
+Answer: Middleware in Express.js are functions that have access to the request, response, and the next middleware function in the application’s request-response cycle. They can be used to modify request and response objects, end the request-response cycle, and call the next middleware function.
+Routing in Express.js:
+How do you define routes in Express.js?
+
+Answer: Routes in Express.js are defined using the app.get, app.post, app.put, and app.delete methods, among others. These methods specify how the server should respond to HTTP requests at different routes.
+Explain route parameters in Express.js.
+
+Answer: Route parameters in Express.js are placeholders in the route pattern denoted by a colon (e.g., :id). They capture values from the URL, making it possible to access dynamic values in the request parameters.
+What is the purpose of the next function in Express.js middleware?
+
+Answer: The next function in Express.js middleware is used to pass control to the next middleware function in the stack. It is often called to move to the next phase of the request-response cycle.
+Middleware in Express.js:
+What is the difference between app.use and app.METHOD in Express.js?
+
+Answer: app.use is a general-purpose middleware function that is executed for all routes, while app.METHOD (e.g., app.get, app.post) is used to define middleware that is specific to a particular HTTP method.
+Explain the concept of error-handling middleware in Express.js.
+
+Answer: Error-handling middleware in Express.js is used to handle errors that occur during the request-response cycle. It is defined with four parameters (err, req, res, next) and is invoked when an error occurs.
+What is the purpose of the express.static middleware?
+
+Answer: The express.static middleware serves static files such as images, CSS files, and JavaScript files. It is responsible for serving files from a specified directory.
+Templating Engines in Express.js:
+What is a templating engine in Express.js?
+
+Answer: A templating engine in Express.js allows embedding dynamic content in HTML templates. Common templating engines include EJS (Embedded JavaScript) and Pug (formerly known as Jade).
+How do you configure and use a templating engine in Express.js?
+
+Answer: To use a templating engine like EJS, you install it using npm install ejs and set it as the view engine in Express with app.set('view engine', 'ejs'). Then, you can render views using res.render('viewName', { data }).
+Request and Response in Express.js:
+What is the difference between req.query and req.params in Express.js?
+
+Answer: req.query contains the query parameters from the URL, while req.params contains route parameters specified in the URL pattern.
+Explain the purpose of the req.body object in Express.js.
+
+Answer: req.body in Express.js contains the data submitted in the request body. It is used for handling POST requests and extracting form data or JSON payloads.
+How do you handle form submissions in Express.js?
+
+Answer: Form submissions in Express.js can be handled using the body-parser middleware to parse the form data from req.body. The data can then be processed and used in the application.
+RESTful API in Express.js:
+What is RESTful routing?
+
+Answer: RESTful routing is an approach to designing API endpoints that follows REST principles, using standard HTTP methods (GET, POST, PUT, DELETE) and organizing resources in a predictable manner.
+How can you create a RESTful API using Express.js?
+
+Answer: To create a RESTful API in Express.js, define routes for different HTTP methods (GET, POST, PUT, DELETE) that correspond to the CRUD operations (Create, Read, Update, Delete) on resources.
+Explain the purpose of the express.Router in Express.js.
+
+Answer: express.Router is a middleware in Express.js that allows creating modular, mountable route handlers. It is often used to organize routes into separate files or modules.
+Security in Express.js:
+What is Cross-Site Scripting (XSS) in the context of Express.js?
+
+Answer: Cross-Site Scripting (XSS) is a security vulnerability where an attacker injects malicious scripts into web pages viewed by other users. In Express.js, preventing XSS involves proper validation and sanitization of user inputs.
+How can you mitigate against SQL injection in Express.js?
+
+Answer: To mitigate SQL injection, use parameterized queries or prepared statements when interacting with databases. This helps ensure that user inputs are treated as data, not executable code.
+Explain the purpose of Helmet middleware in Express.js.
+
+Answer: Helmet is a collection of middleware functions for Express.js that helps secure web applications by setting various HTTP headers. It provides defenses against common security vulnerabilities.
+Authentication and Authorization:
+What is JWT (JSON Web Token) and how is it used in Express.js?
+
+Answer: JWT is a compact, URL-safe means of representing claims to be transferred between two parties. In Express.js, JWTs are often used for authentication by encoding user information into a token, which can be sent in the request headers.
+Explain the difference between authentication and authorization.
+
+Answer: Authentication is the process of verifying the identity of a user, while authorization is the process of granting or denying access to specific resources based on the user's identity and permissions.
+Testing in Express.js:
+What is middleware testing in Express.js?
+
+Answer: Middleware testing in Express.js involves testing the behavior of middleware functions. This can include checking if middleware functions handle requests and responses correctly and if they call the next function appropriately.
+How can you perform unit testing for Express.js applications?
+
+Answer: Unit testing in Express.js can be performed using testing frameworks like Mocha or Jest. Mocking, stubbing, and using testing libraries like Supertest can help test routes, middleware, and controllers.
+WebSockets and Real-Time Communication:
+**What are WebSockets,

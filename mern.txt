@@ -1,0 +1,70 @@
+What is MongoDB?
+
+Answer: MongoDB is a NoSQL database that stores data in flexible, JSON-like documents. It is designed for scalability, flexibility, and high performance.
+Explain the difference between SQL databases and MongoDB.
+
+Answer: SQL databases are relational and use tables to store data, while MongoDB is a NoSQL database that uses collections and documents to store data in a flexible, schema-less format.
+What is BSON?
+
+Answer: BSON (Binary JSON) is the binary-encoded format used by MongoDB to store documents and represent data types.
+What is the role of the mongod process in MongoDB?
+
+Answer: The mongod process is the primary daemon process for the MongoDB system. It is responsible for handling data requests, managing data files, and ensuring data integrity.
+Explain the concept of indexing in MongoDB.
+
+Answer: Indexing in MongoDB is the process of creating an index on a field to improve query performance. It allows MongoDB to quickly locate specific documents within a collection.
+Express.js:
+What is Express.js?
+
+Answer: Express.js is a web application framework for Node.js that simplifies the process of building robust and scalable web applications.
+Explain middleware in Express.js.
+
+Answer: Middleware functions in Express.js have access to the request, response, and the next middleware function in the application’s request-response cycle. They can be used to modify request and response objects, end the request-response cycle, and call the next middleware function.
+What is routing in Express.js?
+
+Answer: Routing in Express.js refers to determining how an application responds to a client request to a particular endpoint, or URL. It involves defining routes, handling HTTP methods, and defining what should happen when a specific route is accessed.
+React:
+What is React.js?
+
+Answer: React.js is a JavaScript library for building user interfaces, developed and maintained by Facebook. It allows developers to build reusable UI components that update efficiently in response to data changes.
+Explain the concept of JSX in React.
+
+Answer: JSX (JavaScript XML) is a syntax extension for JavaScript recommended by React. It allows mixing HTML-like code with JavaScript, making it easier to write and understand React components.
+What is the significance of virtual DOM in React?
+
+Answer: The virtual DOM is a lightweight copy of the real DOM in React. It allows React to efficiently update only the parts of the actual DOM that have changed, improving performance.
+What is the role of setState in React?
+
+Answer: setState is a method used in React to update the state of a component. When the state changes, React re-renders the component, reflecting the updated state in the UI.
+Node.js:
+What is Node.js?
+
+Answer: Node.js is a server-side JavaScript runtime environment that allows the execution of JavaScript code on the server. It is built on the V8 JavaScript runtime and is designed to be efficient and scalable.
+Explain the concept of the event-driven programming model in Node.js.
+
+Answer: Node.js uses an event-driven, non-blocking I/O model. This means that it can handle many connections simultaneously without blocking the execution of code, making it highly scalable and efficient.
+What is npm?
+
+Answer: npm (Node Package Manager) is the default package manager for Node.js. It is used to install, share, and manage packages or libraries in a Node.js application.
+MERN Stack:
+Explain the MERN stack.
+
+Answer: The MERN stack consists of MongoDB (database), Express.js (server framework), React.js (front-end framework), and Node.js (runtime environment). It is a popular and powerful stack for building full-stack web applications.
+How does data flow between the components in a MERN application?
+
+Answer: Data typically flows from the MongoDB database to the Express.js server, which then sends it to the React.js front-end through API calls. React components can update the state, triggering re-renders to reflect changes in the UI.
+What is the purpose of webpack in a MERN stack application?
+
+Answer: Webpack is a module bundler that is often used in MERN applications to bundle and optimize front-end code. It helps manage assets, dependencies, and improves performance by reducing the number of HTTP requests.
+How can you secure a MERN stack application?
+
+Answer: Secure a MERN stack application by implementing measures such as input validation, using HTTPS, securing APIs with authentication and authorization, protecting against Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF), and keeping dependencies up to date.
+Explain the concept of JWT (JSON Web Tokens) in a MERN application.
+
+Answer: JWT is a compact, URL-safe means of representing claims to be transferred between two parties. In a MERN application, JWTs are often used for user authentication and authorization. When a user logs in, a token is generated and sent to the client, which includes information about the user's identity and permissions.
+How does MERN support the concept of a Single Page Application (SPA)?
+
+Answer: React, as part of the MERN stack, facilitates the creation of SPAs by allowing the development of dynamic, interactive user interfaces. React components efficiently update only the parts of the UI that have changed, providing a seamless and responsive user experience without the need for full page reloads.
+What are the advantages of using MERN stack for web development?
+
+Answer: Advantages of using the MERN stack include a consistent JavaScript-based development environment, a powerful and scalable architecture, the ability to reuse code between the front-end and back-end, and a vibrant community with a wealth of resources and libraries.

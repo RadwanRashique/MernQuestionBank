@@ -1,0 +1,102 @@
+What is MongoDB?
+
+Answer: MongoDB is a NoSQL database that stores data in flexible, JSON-like documents. It is designed for scalability, flexibility, and high performance.
+Explain the key features of MongoDB.
+
+Answer: MongoDB features include document-based storage, dynamic schema, support for indexing, replication for high availability, and horizontal scaling through sharding.
+What is BSON in MongoDB?
+
+Answer: BSON (Binary JSON) is a binary-encoded serialization of JSON-like documents used by MongoDB. It allows efficient storage and retrieval of data.
+Documents and Collections:
+What is a document in MongoDB?
+
+Answer: A document in MongoDB is a record that consists of key-value pairs. It is analogous to a row in a relational database table.
+What is a collection in MongoDB?
+
+Answer: A collection in MongoDB is a grouping of MongoDB documents. It is similar to a table in a relational database, but it doesn't enforce a schema.
+Querying in MongoDB:
+Explain the find() method in MongoDB.
+
+Answer: The find() method in MongoDB is used to query documents from a collection. It can include criteria for filtering, sorting, and limiting the results.
+What is the purpose of the findOne() method in MongoDB?
+
+Answer: The findOne() method is used to retrieve a single document that matches the specified criteria. It is often used when you expect only one result.
+How can you perform a projection in MongoDB?
+
+Answer: Projection in MongoDB involves limiting the fields returned in a query. It is done by passing a second argument to find() or findOne() with the fields to include or exclude.
+Indexing and Performance:
+Why is indexing important in MongoDB?
+
+Answer: Indexing in MongoDB improves the speed of query execution by creating a data structure that allows the database to find and retrieve data more quickly.
+How do you create an index in MongoDB?
+
+Answer: You can create an index in MongoDB using the createIndex() method. For example: db.collection.createIndex({ field: 1 }) creates an ascending index on the specified field.
+Aggregation Framework:
+What is the Aggregation Framework in MongoDB?
+
+Answer: The Aggregation Framework is a powerful tool in MongoDB for performing data transformation operations on the data stored in collections. It allows users to process data and return computed results.
+Explain the concept of pipelines in the Aggregation Framework.
+
+Answer: Pipelines in the Aggregation Framework are sequences of data processing stages. Each stage in the pipeline transforms the documents as they pass through, enabling complex data manipulations.
+CRUD Operations:
+How can you insert documents in MongoDB?
+
+Answer: Documents can be inserted in MongoDB using the insertOne() or insertMany() methods. For example: db.collection.insertOne({ field: value }).
+Explain how to update documents in MongoDB.
+
+Answer: Updating documents in MongoDB can be done using the updateOne() or updateMany() methods. The $set operator is often used to specify the fields to update.
+What is the purpose of the remove() method in MongoDB?
+
+Answer: The remove() method in MongoDB is used to delete documents from a collection based on specified criteria.
+Data Modeling:
+What is normalization in MongoDB?
+
+Answer: Normalization in MongoDB involves designing the database schema to minimize redundancy and dependency by organizing data into separate collections.
+Explain denormalization in MongoDB.
+
+Answer: Denormalization in MongoDB involves duplicating data in multiple documents or collections to optimize read performance and simplify query complexity.
+Transactions:
+Does MongoDB support transactions?
+Answer: Yes, MongoDB supports multi-document transactions starting from version 4.0. Transactions provide atomicity and consistency for operations involving multiple documents.
+Security and Authentication:
+How can you secure MongoDB?
+
+Answer: MongoDB can be secured by using authentication, setting up access control, enabling encryption, and regularly updating and patching the MongoDB server.
+Explain the role of roles in MongoDB security.
+
+Answer: Roles in MongoDB define the privileges granted to users. They control a user's access to databases and operations within those databases.
+Sharding:
+What is sharding in MongoDB?
+
+Answer: Sharding is the process of splitting a large dataset across multiple servers to improve performance and horizontal scalability.
+How do you enable sharding in MongoDB?
+
+Answer: Sharding is enabled by choosing a shard key and running the sh.enableSharding() command on the database. Subsequently, collections can be sharded using sh.shardCollection().
+Backup and Restoration:
+How can you perform a backup in MongoDB?
+
+Answer: MongoDB backups can be performed using tools like mongodump or by using file system snapshots. For example: mongodump --out /path/to/backup.
+Explain the process of restoring a MongoDB backup.
+
+Answer: MongoDB backups can be restored using the mongorestore tool. For example: mongorestore /path/to/backup.
+Replication:
+What is replication in MongoDB?
+
+Answer: Replication in MongoDB involves maintaining multiple copies of data to ensure high availability and fault tolerance. It consists of a primary node and one or more secondary nodes.
+How do you set up replication in MongoDB?
+
+Answer: Replication is set up by configuring a MongoDB replica set. This involves starting multiple MongoDB instances, specifying the replica set configuration, and initiating the replica set.
+Scaling:
+What is vertical scaling in MongoDB?
+
+Answer: Vertical scaling involves increasing the capacity of a single server by adding more resources, such as CPU, RAM, or storage.
+Explain horizontal scaling in MongoDB.
+
+Answer: Horizontal scaling involves distributing data across multiple servers to handle larger amounts of traffic and data. In MongoDB, this is achieved through sharding.
+GeoSpatial Indexing:
+What is GeoSpatial Indexing in MongoDB?
+
+Answer: GeoSpatial Indexing in MongoDB allows the storage and retrieval of geospatial data. It supports queries that involve the proximity of objects on the Earth's surface.
+How do you create a GeoSpatial Index in MongoDB?
+
+Answer: A GeoSpatial Index in MongoDB is created using the createIndex() method with a 2dsphere index type. For example: db.collection.createIndex({ location: "2dsphere" }).

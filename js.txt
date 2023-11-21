@@ -1,0 +1,107 @@
+What is JavaScript?
+
+Answer: JavaScript is a high-level, interpreted programming language primarily used for creating
+ It can also be used on the server side with platforms like Node.js.
+Explain the difference between let, const, and var in JavaScript.
+
+Answer: var is function-scoped, let is block-scoped, and const is also block-scoped but cannot be reassigned after declaration.
+What is hoisting in JavaScript?
+
+Answer: Hoisting is a JavaScript behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase.
+Explain closures in JavaScript.
+
+Answer: Closures are functions that have access to variables from their outer (enclosing) scope, even after the outer function has finished execution.
+What is the event loop in JavaScript?
+
+Answer: The event loop is a mechanism that allows JavaScript to execute asynchronous tasks by managing the execution of functions in a single-threaded, non-blocking way.event-driven, non-blocking I/O model.
+What is the difference between == and === in JavaScript?
+
+Answer: == checks for equality after type coercion, while === checks for equality without type coercion (strict equality).
+Explain the concept of callback functions.
+
+Answer: A callback function is a function passed as an argument to another function and is executed after the completion of some operation.
+What is the purpose of the this keyword in JavaScript?
+7777777
+Answer: this refers to the object on which a method is being invoked or to the object that is being constructed.
+How does prototypal inheritance work in JavaScript?
+
+Answer: JavaScript uses prototypal inheritance, where objects can inherit properties and methods from other objects through their prototype chain.
+What is the difference between null and undefined in JavaScript?
+
+Answer: null is an assignment value representing the absence of any object value, while undefined means a variable has been declared but has not been assigned a value.
+Explain the concept of promises in JavaScript.
+
+Answer: Promises are objects representing the eventual completion or failure of an asynchronous operation. They help in handling asynchronous code in a more readable and manageable way.
+What is the purpose of the async and await keywords in JavaScript?
+
+Answer: async is used to declare an asynchronous function, and await is used to wait for the resolution of a promise inside an asynchronous function.
+How does the map function work in JavaScript?
+
+Answer: The map function is used to iterate over an array and apply a function to each element, creating a new array of the results.
+Explain the difference between let and const in terms of immutability.
+
+Answer: While let allows variable reassignment, const is used for constants and cannot be reassigned after declaration. However, it does not make objects assigned to it immutable.
+What is the purpose of the bind method in JavaScript?
+
+Answer: The bind method is used to create a new function that, when called, has its this keyword set to a specific value, with a given sequence of arguments preceding any provided when the new function is called.
+Explain the concept of event delegation.
+
+Answer: Event delegation involves attaching a single event listener to a common ancestor of multiple elements and using the event object's target property to determine which descendant triggered the event.
+What is the difference between document.querySelector and document.querySelectorAll?
+
+Answer: document.querySelector returns the first element that matches a specified CSS selector, while document.querySelectorAll returns a NodeList containing all elements that match the selector.
+What is the purpose of the localStorage and sessionStorage objects?
+
+Answer: These objects provide a way to store key/value pairs in a web browser. localStorage persists data even after the browser is closed, while sessionStorage persists only for the duration of the page session.
+What is the purpose of the try, catch, and finally blocks in JavaScript?
+
+Answer: They are used for error handling. Code inside the try block is executed, and if an exception occurs, it is caught in the catch block. The finally block is always executed, regardless of whether an exception occurred or not.
+How does JavaScript handle asynchronous operations?
+
+Answer: JavaScript uses mechanisms like callbacks, promises, and async/await to handle asynchronous operations. The event loop manages the execution of asynchronous tasks.
+Explain the concept of the same-origin policy.
+
+Answer: The same-origin policy is a security measure that restricts web pages from making requests to a different domain than the one that served the web page. This is to prevent potential security vulnerabilities.
+What is the purpose of the fetch API in JavaScript?
+
+Answer: The fetch API is used for making HTTP requests. It provides a more flexible and powerful way to interact with servers compared to older methods like XMLHttpRequest.
+How does the spread operator work in JavaScript?
+
+Answer: The spread operator (...) is used to unpack elements from an array or properties from an object. It can be used for creating shallow copies of arrays and objects.
+Explain the concept of memoization in JavaScript.
+
+Answer: Memoization is an optimization technique where the results of expensive function calls are cached, so that if the same inputs occur again, the result is returned from the cache instead of recalculating.
+What is the Event Bubbling and Event Capturing in JavaScript?
+
+Answer: Event bubbling is a phase in the event propagation where the event starts from the target element and bubbles up to the root of the document. Event capturing, on the other hand, is the phase where the event trickles down from the root to the target element. These are two phases of the event propagation in the DOM.
+
+What is the purpose of the typeof operator in JavaScript?
+
+Answer: The typeof operator is used to determine the data type of a variable or expression, returning a string representing the data type.
+Explain the concept of the event.preventDefault() method.
+
+Answer: event.preventDefault() is a method used to prevent the default action associated with an event. For example, preventing a form submission or a link from navigating to a new page.
+What is a closure and how is it used in JavaScript?
+
+Answer: A closure is a function that retains access to variables from its outer (enclosing) scope even after the outer function has finished execution. Closures are often used to create private variables and encapsulate functionality.
+How does the setTimeout function work in JavaScript?
+
+Answer: setTimeout is a function used to execute a given function or code block after a specified delay (in milliseconds). It is often used for asynchronous operations and to introduce delays in execution.
+Explain the difference between null and undefined in JavaScript.
+
+Answer: null is an intentional absence of any object value, while undefined represents a variable that has been declared but not assigned a value.
+What is the purpose of the JSON.stringify and JSON.parse methods in JavaScript?
+
+Answer: JSON.stringify converts a JavaScript object or value to a JSON string, while JSON.parse converts a JSON string into a JavaScript object.
+Explain the concept of debouncing in JavaScript.
+
+Answer: Debouncing is a technique used to ensure that time-consuming tasks do not fire so often, making them more efficient. It is often used in scenarios like handling user input to delay the execution of a function until after a specified time has elapsed since the last time the function was invoked.
+What is the purpose of the Promise.all method in JavaScript?
+
+Answer: Promise.all is used to wait for all promises in an iterable (e.g., an array) to resolve or reject. It returns a single promise that resolves with an array of the resolved values or rejects with the reason of the first promise that rejects.
+Explain the concept of the prototype chain in JavaScript.
+
+Answer: The prototype chain is a mechanism by which objects in JavaScript inherit properties and methods from their prototype objects. When a property or method is accessed on an object, JavaScript looks for it in the object itself and then in its prototype chain.
+What is the purpose of the Object.create method in JavaScript?
+
+Answer: Object.create is used to create a new object with the specified prototype object and properties. It allows for explicit control over the prototype chain of an object.

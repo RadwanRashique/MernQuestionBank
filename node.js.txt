@@ -1,0 +1,86 @@
+What is Node.js?
+
+Answer: Node.js is a server-side runtime environment built on the V8 JavaScript engine. It allows running JavaScript on the server, enabling the development of scalable and high-performance applications.
+Explain the concept of non-blocking I/O in Node.js.
+
+Answer: Node.js uses a non-blocking, event-driven model for handling I/O operations. It allows the server to continue processing other tasks while waiting for I/O operations to complete, enhancing performance and scalability.
+How does Node.js handle concurrent requests?
+
+Answer: Node.js handles concurrent requests by using an event-driven, non-blocking architecture. It utilizes an event loop that efficiently manages asynchronous tasks, ensuring that the server remains responsive to multiple requests.
+Modules and NPM:
+What is a module in Node.js?
+
+Answer: In Node.js, a module is a reusable piece of code that encapsulates related functions and variables. Modules can be loaded using the require function.
+Explain the purpose of the package.json file.
+
+Answer: package.json is a metadata file in Node.js projects. It contains information about the project, its dependencies, scripts, and other configuration settings. It is used by NPM (Node Package Manager) to manage project dependencies.
+What is NPM?
+
+Answer: NPM (Node Package Manager) is a package manager for Node.js that simplifies the process of installing, managing, and sharing third-party libraries and tools in Node.js projects.
+Event Loop and Asynchronous Programming:
+What is the event loop in Node.js?
+
+Answer: The event loop is a core concept in Node.js that continuously processes events and executes callbacks. It allows Node.js to handle multiple I/O operations concurrently, making it well-suited for building scalable and high-performance applications.
+Explain the difference between synchronous and asynchronous programming in Node.js.
+
+Answer: In synchronous programming, tasks are executed sequentially, blocking the execution of subsequent code until the current task is completed. In asynchronous programming, tasks are non-blocking, allowing the program to continue executing other tasks while waiting for I/O operations to complete.
+What is the purpose of the callback function in Node.js?
+
+Answer: Callback functions in Node.js are used to handle asynchronous operations. They are passed as arguments to functions that perform asynchronous tasks and are executed once the task is completed.
+File System and Streams:
+How can you read and write files in Node.js?
+
+Answer: The fs module in Node.js provides functions for reading and writing files. For example, fs.readFile is used to read a file, and fs.writeFile is used to write to a file.
+Explain the concept of streams in Node.js.
+
+Answer: Streams in Node.js provide an efficient way to handle data flow. They allow reading or writing data in chunks, making it possible to process large amounts of data without loading the entire dataset into memory.
+What is piping in Node.js streams?
+
+Answer: Piping in Node.js streams involves connecting the output of one stream to the input of another. It is a way to chain streams together, facilitating the efficient transfer of data.
+Express.js:
+What is Express.js?
+
+Answer: Express.js is a web application framework for Node.js. It simplifies the process of building robust and scalable web applications by providing a set of features and middleware for handling routes, requests, and responses.
+Explain middleware in Express.js.
+
+Answer: Middleware functions in Express.js have access to the request, response, and the next middleware function in the application’s request-response cycle. They can be used to modify request and response objects, end the request-response cycle, and call the next middleware function.
+What is routing in Express.js?
+
+Answer: Routing in Express.js refers to determining how an application responds to a client request to a particular endpoint or URL. It involves defining routes, handling HTTP methods, and specifying what should happen when a specific route is accessed.
+RESTful API:
+What is a RESTful API?
+
+Answer: RESTful (Representational State Transfer) API is an architectural style for designing networked applications. It uses standard HTTP methods (GET, POST, PUT, DELETE) and follows a stateless client-server communication model.
+How can you create a RESTful API using Express.js?
+
+Answer: You can create a RESTful API using Express.js by defining routes, handling HTTP methods, and specifying the behavior for each route. Express middleware can be used to handle tasks such as request validation and authentication.
+Explain the difference between PUT and POST in the context of RESTful APIs.
+
+Answer: In RESTful APIs, POST is used to create a new resource, while PUT is used to update an existing resource. The key difference is that PUT is idempotent, meaning multiple identical requests have the same effect as a single request.
+Middleware and Authentication:
+What is CORS, and how can it be handled in Express.js?
+
+Answer: CORS (Cross-Origin Resource Sharing) is a security feature implemented by web browsers. In Express.js, CORS can be handled using the cors middleware, which allows or restricts cross-origin requests.
+Explain the purpose of the body-parser middleware in Express.js.
+
+Answer: The body-parser middleware in Express.js is used to parse the body of incoming requests. It is commonly used to extract data from form submissions or JSON payloads.
+What is token-based authentication?
+
+Answer: Token-based authentication involves issuing a token to a client upon successful authentication. The token is then included in subsequent requests to authenticate the client.
+MongoDB and Mongoose:
+What is MongoDB?
+
+Answer: MongoDB is a NoSQL database that stores data in flexible, JSON-like documents. It is designed for scalability, flexibility, and high performance.
+Explain the concept of indexing in MongoDB.
+
+Answer: Indexing in MongoDB is the process of creating an index on a field to improve query performance. It allows MongoDB to quickly locate specific documents within a collection.
+What is Mongoose?
+
+Answer: Mongoose is an Object-Document Mapping (ODM) library for MongoDB and Node.js. It provides a schema-based solution for modeling application data, validation, and interacting with MongoDB.
+Promises and Async/Await:
+What is a Promise in Node.js?
+
+Answer: A Promise in Node.js is an object representing the eventual completion or failure of an asynchronous operation. It allows writing asynchronous code in a more readable and manageable way.
+Explain the concept of asynchronous programming using Async/Await in Node.js.
+
+Answer: Async/Await is a feature in Node.js that simplifies asynchronous programming. It allows writing asynchronous code using a syntax that resembles

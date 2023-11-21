@@ -1,0 +1,44 @@
+What is EJS (Embedded JavaScript), and why is it used in web development?
+
+Answer: EJS is a templating engine for JavaScript that allows embedding dynamic content in HTML templates. It is used in web development to generate dynamic web pages by rendering data on the server side.
+How do you install EJS in a Node.js project?
+
+Answer: You can install EJS in a Node.js project using the following npm command:
+bash
+Copy code
+npm install ejs
+Explain the syntax for embedding JavaScript code within EJS templates.
+
+Answer: JavaScript code in EJS templates is embedded using <% %> tags. For example:
+ejs
+Copy code
+<h1>Hello, <%= username %>!</h1>
+What is the significance of <%- %> in EJS templates?
+
+Answer: <%- %> is used in EJS templates to output unescaped content. It is useful when rendering HTML content to prevent HTML entities from being escaped.
+How can you include partials (reusable components) in EJS templates?
+
+Answer: Partials can be included in EJS templates using the <%- include('partialName') %> syntax. The partialName refers to the name of the EJS file without the extension.
+Explain how to pass data from a Node.js server to an EJS template.
+
+Answer: Data can be passed from a Node.js server to an EJS template using the res.render method. For example:
+javascript
+Copy code
+res.render('template', { key: 'value' });
+What is the purpose of layouts in EJS, and how can you implement them?
+
+Answer: Layouts in EJS are used to define the common structure of multiple views. They can be implemented by creating a layout file with placeholders for content, and views can extend or include this layout.
+How do you conditionally render content in EJS templates?
+
+Answer: Conditional rendering in EJS is achieved using <% if (condition) { %> ... <% } %> blocks. For example:
+ejs
+Copy code
+<% if (user.isAdmin) { %>
+  <p>Welcome, Admin!</p>
+<% } %>
+Explain the purpose of iteration in EJS templates, and how is it implemented?
+
+Answer: Iteration in EJS is used to loop over arrays or objects. It is implemented using <% array.forEach(item => { %> ... <% }); %> or similar constructs.
+How can you comment in EJS templates?
+
+Answer: EJS supports comments using <%# this is a comment %> syntax. The content inside <%# %> will not be rendered.
